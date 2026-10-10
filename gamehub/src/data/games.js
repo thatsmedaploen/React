@@ -1,0 +1,58 @@
+const games = [
+  {
+    id: 1,
+    title: "Minecraft",
+    genre: "Sandbox",
+    rating: 8.5,
+    year: 2011,
+    played: true,
+    image: "/minecraft.jpg",
+  },
+  {
+    id: 2,
+    title: "Elden Ring",
+    genre: "RPG",
+    rating: 9.5,
+    year: 2022,
+    played: false,
+    image: "/eldenring.jpg",
+  },
+  {
+    id: 3,
+    title: "Hades",
+    genre: "Action",
+    rating: 8.8,
+    year: 2020,
+    played: false,
+    image: "/hades.jpg",
+  },
+  {
+    id: 4,
+    title: "Cyberpunk 2077",
+    genre: "RPG",
+    rating: 8.4,
+    year: 2020,
+    played: true,
+    image: "/cyberpunk.jpg",
+  },
+  {
+    id: 5,
+    title: "Hollow Knight",
+    genre: "Adventure",
+    rating: 9.2,
+    year: 2017,
+    played: false,
+    image: "/hollow.jpg",
+  },
+  {
+    id: 6,
+    title: "Stardew Valley",
+    genre: "Simulation",
+    rating: 8.7,
+    year: 2016,
+    played: false,
+    image: "/stardewvalley.jpg",
+  },
+];
+
+export default games;

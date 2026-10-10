@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply m-0 bg-[#080d18] text-[#f1f5f9];
+    font-family: "Inter", sans-serif;
+  }
+
+  button,
+  input,
+  select {
+    font: inherit;
+  }
+
+  button,
+  a,
+  select {
+    @apply cursor-pointer;
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible {
+    @apply outline-2 outline-[#818cf8] outline-offset-[3px];
+  }
+
+  img {
+    @apply block max-w-full;
+  }
+}
+
+@layer components {
+  .wishlist-button {
+    @apply w-full mt-[14px] px-[10px] py-[10px] border border-[#3a4660] rounded-lg bg-[#1a2438] text-[#cbd5e1] text-xs font-semibold cursor-pointer transition-all duration-200 ease-out outline-none;
+  }
+
+  .wishlist-button:hover {
+    @apply border-[#818cf8] bg-[#252e4b] text-white;
+  }
+
+  .wishlist-button.selected {
+    @apply text-[#f9a8d4] border-[#7c315a] bg-[#3b1931];
+  }
+}
